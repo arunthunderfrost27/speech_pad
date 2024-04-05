@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background: #181819;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+
+}
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.p{
+    font-size: larger;
+    position: relative;
+    bottom: 8rem;  
+  }
+
+.notes_title {
+    color: #fff;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    bottom: 18rem;
+}
+
+.notes {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    position: absolute;
+    bottom: 5rem;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+}
+
+@media screen and (max-width: 960px) {
+    .notes {
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .notes {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}
+
+.App {
+    text-align: center;
+  
+  }
+  
+  .App-logo {
+    height: 10vmin;
+    pointer-events: none;
+    position: relative;
+    bottom: 7rem;
+  }
+  .Nav-logo {
+    height: 4rem;
+    position: relative;
+  }
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color:#d1d0d017;
+    backdrop-filter: blur(5px);
+    min-height: 80vh;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    opacity: 60%;
+  }
+  .overlay{
+    position: absolute;
+    width: 100%;
+    right: 0.5rem;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .Note-logo{
+    height: 2rem;
+    position: relative;
+    right: 0.2rem;
+    top: 0.1rem;
+  }
+
+  .Nav-header{
+    background-color: #000000;  
+    align-items: top;
+    justify-content: center;
+    font-size: calc(2px + 2vmin);
+
+  }
+  .App-link {
+    color: #61dafb;
+    position: relative;
+    bottom: 7rem;
+  }
+  .Nav-p{
+    position:absolute;
+    left: 8rem;
+    bottom:38rem;
+    font-size: larger;
+    color: #fff;
+    
+  
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  
